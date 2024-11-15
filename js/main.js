@@ -51,6 +51,8 @@ jQuery(document).on('ready', function ($) {
         }
     }
 
+    
+
 
     /*------------------------------
         TIME PICKER ACTIVE
@@ -310,3 +312,4 @@ jQuery(window).on('load', function () {
     ----------------------------*/
     $(".preeloader").fadeOut(1000);
 });
+
