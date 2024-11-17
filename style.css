@@ -226,6 +226,27 @@ input:-webkit-autofill:focus {
     color: #008000;
 }
 
+.swiper-container {
+    overflow: hidden;
+    padding: 25px 0px 15px 0px;
+}
+
+.features-area {
+    background-color: black;
+    background: #000 url(img/pattarn.png);
+    content: "";
+}
+
+.single-feature h4 {
+    margin-bottom: 0px;
+    color: white;
+    padding-top: 7px;
+}
+
+.single-feature i {
+    color: green;
+}
+
 .top-social-bookmark ul li:last-child a {
     margin-right: -5px;
 }
