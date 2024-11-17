@@ -97,6 +97,48 @@ a:hover {
     text-decoration: none
 }
 
+/*-------------------------------------------------
+    [ ## scrollbar ]
+*/
+*::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset -5px -5px 8px -1px rgba(255, 255, 255, 0.7), 5px 5px 8px -1px rgba(0, 0, 0, 0.065);
+    box-shadow: inset -5px -5px 8px -1px rgba(255, 255, 255, 0.7), 5px 5px 8px -1px rgba(0, 0, 0, 0.065);
+    background-color: #f8f9ff;
+  }
+  
+  *::-webkit-scrollbar {
+    width: 6px;
+    background-color: #f8f9ff;
+  }
+  
+  *::-webkit-scrollbar-button {
+    background-color: #008000;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #008000;
+  }
+
+
+
+
+
+
+  /* Allgemeine Textauswahl */
+::selection {
+    background-color: #008000; /* Grüner Hintergrund */
+    color: #ffffff;            /* Weißer Text */
+    text-shadow: none;         /* Kein Textschatten */
+}
+
+/* Für Firefox spezifisch */
+::-moz-selection {
+    background-color: #008000; /* Grüner Hintergrund */
+    color: #ffffff;            /* Weißer Text */
+    text-shadow: none;         /* Kein Textschatten */
+}
+
+
 
 /* Remove Chrome Input Field's Unwanted Yellow Background Color */
 
@@ -133,16 +175,16 @@ input:-webkit-autofill:focus {
     font-family: 'Sacramento', cursive; 
     font-family: 'Great Vibes', cursive;
 */
-    color: #008000;
-    display: inline-block;
-    font-family: "Dancing Script", cursive;
-    font-size: 60px;
-    letter-spacing: 2px;
-    line-height: 0.8;
-    margin: 0;
-    padding: 0 20px 45px;
-    position: relative;
-    text-transform: capitalize;
+color: #008000;
+display: inline-block;
+font-family: 'Libre Baskerville', serif; /* Angepasste Schriftart */
+font-size: 50px;
+letter-spacing: 2px;
+line-height: 0.8;
+margin: 0;
+padding: 0 20px 45px;
+position: relative;
+text-transform: capitalize;
 }
 
 .area-title h2::after {
@@ -237,7 +279,8 @@ input:-webkit-autofill:focus {
     content: "";
 }
 
-.imprint-section {
+.imprint-section,
+.privacy-section {
     background: #000 url(img/pattarn.png);
     content: "";
     padding: 60px 20px;
@@ -777,7 +820,7 @@ a.search-form-trigger::before {
 }
 
 .about-area .area-title h2 {
-    font-size: 80px;
+    font-size: 65px;
     padding-bottom: 10px;
     position: relative;
 }

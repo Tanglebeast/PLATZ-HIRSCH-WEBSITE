@@ -1,4 +1,15 @@
+/* Gemeinsame Styles für Impressum und Datenschutzerklärung */
+.imprint-section,
+.privacy-policy-section {
+    /* Falls spezifische Styles für die Sektionen benötigt werden, können diese hier hinzugefügt werden */
+}
 
+.impressum-container,
+.privacy-container {
+    line-height: 1.8;
+    color: white;
+    font-size: 16px;
+}
 
 .section-header {
     text-align: center;
@@ -15,13 +26,6 @@
     padding-bottom: 5px;
 }
 
-.impressum-container {
-    line-height: 1.8;
-    color: white;
-    font-size: 16px;
-}
-
-
 .info-section {
     margin-top: 15px;
     padding-left: 20px;
@@ -33,17 +37,21 @@
     margin-bottom: 10px;
 }
 
-.contact-info a {
+.contact-info a,
+.privacy-container a { /* Hinzugefügt für Links in der Datenschutzerklärung */
     color: #008000 !important;
     text-decoration: none;
 }
 
-.contact-info a:hover {
+.contact-info a:hover,
+.privacy-container a:hover { /* Hinzugefügt für Hover-Effekte in der Datenschutzerklärung */
     text-decoration: underline;
 }
 
+/* Responsive Anpassungen für Impressum und Datenschutzerklärung */
 @media (max-width: 768px) {
-    .imprint-section {
+    .imprint-section,
+    .privacy-policy-section {
         padding: 30px 10px;
     }
 
