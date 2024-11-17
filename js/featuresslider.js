@@ -4,39 +4,24 @@ var featureSwiper = new Swiper('.features-slider', {
         delay: 3000,
         disableOnInteraction: false,
     },
-    slidesPerView: 4,
-    spaceBetween: 30,
+    slidesPerView: 3,
+    spaceBetween: 10,
     breakpoints: {
-        // wenn die Fensterbreite >= 320px ist
-        320: {
-            slidesPerView: 1,
-            spaceBetween: 10
-        },
-        // wenn die Fensterbreite >= 480px ist
-        480: {
+        576: {
             slidesPerView: 2,
-            spaceBetween: 20
+            spaceBetween: 15,
         },
-        // wenn die Fensterbreite >= 768px ist
         768: {
             slidesPerView: 3,
-            spaceBetween: 30
+            spaceBetween: 20,
         },
-        // wenn die Fensterbreite >= 992px ist
         992: {
             slidesPerView: 4,
-            spaceBetween: 30
-        }
+            spaceBetween: 30,
+        },
     },
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
     },
-    // Navigation Buttons (optional)
-    /*
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    */
 });
