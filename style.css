@@ -177,7 +177,7 @@ input:-webkit-autofill:focus {
 */
 color: #008000;
 display: inline-block;
-font-family: 'Libre Baskerville', serif; /* Angepasste Schriftart */
+font-family: "PT Sans Narrow", sans-serif;
 font-size: 50px;
 letter-spacing: 2px;
 line-height: 0.8;
@@ -185,6 +185,7 @@ margin: 0;
 padding: 0 20px 45px;
 position: relative;
 text-transform: capitalize;
+font-weight: 400;
 }
 
 .area-title h2::after {
@@ -2092,7 +2093,7 @@ ul.blog-instagram-feed-widget li {
 ================================*/
 
 .single-blog-page .page-barner-bg {
-    background: rgba(0, 0, 0, 0) url("img/blog/blog_details_page_barner.jpg") no-repeat scroll center center / cover;
+    background: rgba(0, 0, 0, 0) url("img/promotions/promotions_area_bg_3.jpg") no-repeat scroll center center / cover;
 }
 
 .single-blog-page .title-and-meta::after {
@@ -2306,7 +2307,7 @@ ul.blog-instagram-feed-widget li {
     min-height: 100px;
     /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.2); */
     /* border-bottom: 1px solid rgba(0, 0, 0, 0.438); */
-    border-top: 1px solid rgba(0, 0, 0, 0.438);
+    border-top: 1px dashed #6d6d6d;
 }
 
 .empfohlenpreis {
@@ -2319,6 +2320,7 @@ ul.blog-instagram-feed-widget li {
     font-size: 22px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 5px;
 }
 
 .single-menu h3 span{
@@ -2540,7 +2542,7 @@ ul.blog-instagram-feed-widget li {
     transition: all 0.5s;
   }
   .client-footer-left .title a:hover {
-    color: #e5c949;
+    /* color: #e5c949; */
   }
   
   .client-footer-right .ratings i {
