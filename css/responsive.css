@@ -26,7 +26,7 @@
     padding-top: 12px;
     z-index: 99;
     background: #1a1a1a;
-    color: #008000;
+    color: #006881;
 }
 
 @-webkit-keyframes loader {
@@ -218,7 +218,7 @@
     }
     ul#nav li.active>a,
     ul#nav li:hover>a {
-        color: #008000;
+        color: #006881;
     }
     ul#nav li.active a::before {
         display: none;
@@ -393,7 +393,7 @@
     }
     ul#nav li.active>a,
     ul#nav li:hover>a {
-        color: #008000;
+        color: #006881;
     }
     ul#nav li.active a::before {
         display: none;

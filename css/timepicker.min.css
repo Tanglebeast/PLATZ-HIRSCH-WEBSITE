@@ -202,7 +202,7 @@
 }
 
 .home-three .popover.clockpicker-popover.bottom.clockpicker-align-left {
-    border: 2px solid #008000;
+    border: 2px solid #006881;
 }
 
 .popover.clockpicker-popover.bottom.clockpicker-align-left:after {
@@ -221,7 +221,7 @@
 }
 
 .home-three .clockpicker-popover .popover-title span {
-    color: #008000;
+    color: #006881;
 }
 
 .popover-title {

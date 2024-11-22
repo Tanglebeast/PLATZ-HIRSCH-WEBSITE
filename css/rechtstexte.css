@@ -22,7 +22,7 @@
     color: white;
     text-transform: uppercase;
     letter-spacing: 2px;
-    border-bottom: 3px solid #008000;
+    border-bottom: 3px solid #006881;
     padding-bottom: 5px;
 }
 
@@ -39,7 +39,7 @@
 
 .contact-info a,
 .privacy-container a { /* Hinzugefügt für Links in der Datenschutzerklärung */
-    color: #008000 !important;
+    color: #006881 !important;
     text-decoration: none;
 }
 

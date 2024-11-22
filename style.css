@@ -54,7 +54,7 @@ a {
 }
 
 a:hover {
-    color: #008000;
+    color: #006881;
 }
 
 a:focus,
@@ -112,11 +112,11 @@ a:hover {
   }
   
   *::-webkit-scrollbar-button {
-    background-color: #008000;
+    background-color: #006881;
   }
   
   *::-webkit-scrollbar-thumb {
-    background-color: #008000;
+    background-color: #006881;
   }
 
 
@@ -126,14 +126,14 @@ a:hover {
 
   /* Allgemeine Textauswahl */
 ::selection {
-    background-color: #008000; /* Grüner Hintergrund */
+    background-color: #006881; /* Grüner Hintergrund */
     color: #ffffff;            /* Weißer Text */
     text-shadow: none;         /* Kein Textschatten */
 }
 
 /* Für Firefox spezifisch */
 ::-moz-selection {
-    background-color: #008000; /* Grüner Hintergrund */
+    background-color: #006881; /* Grüner Hintergrund */
     color: #ffffff;            /* Weißer Text */
     text-shadow: none;         /* Kein Textschatten */
 }
@@ -175,7 +175,7 @@ input:-webkit-autofill:focus {
     font-family: 'Sacramento', cursive; 
     font-family: 'Great Vibes', cursive;
 */
-color: #008000;
+color: #006881;
 display: inline-block;
 font-family: "PT Sans Narrow", sans-serif;
 font-size: 50px;
@@ -266,7 +266,7 @@ font-weight: 400;
 
 .top-social-bookmark ul li a:hover {
     background: #fff;
-    color: #008000;
+    color: #006881;
 }
 
 .swiper-container {
@@ -296,7 +296,7 @@ font-weight: 400;
 }
 
 .single-feature i {
-    color: green;
+    color: #006881;
 }
 
 .features-slider .swiper-slide {
@@ -333,7 +333,7 @@ font-weight: 400;
 }
 
 .book-table-popup a {
-    background: #008000 none repeat scroll 0 0;
+    background: #006881 none repeat scroll 0 0;
     color: #fff;
     font-size: 12px;
     font-weight: 700;
@@ -343,7 +343,7 @@ font-weight: 400;
 
 .book-table-popup a:hover {
     background: #fff none repeat scroll 0 0;
-    color: #008000;
+    color: #006881;
 }
 
 
@@ -430,7 +430,7 @@ ul#nav li a {
 }
 
 ul#nav li.active a::before {
-    background: #008000 none repeat scroll 0 0;
+    background: #006881 none repeat scroll 0 0;
     content: "";
     height: 2px;
     left: 0;
@@ -443,7 +443,7 @@ ul#nav li.active a::before {
 
 ul#nav li:hover a,
 ul#nav li.active a {
-    color: #008000;
+    color: #006881;
 }
 
 .top-bar {
@@ -478,7 +478,7 @@ ul#nav li.active a {
 
 .is-sticky ul#nav li.active a,
 .is-sticky ul#nav li:hover a {
-    color: #008000;
+    color: #006881;
 }
 
 .is-sticky .signup-and-login-button ul li {
@@ -557,8 +557,8 @@ a.home-reservation-button {
 .slider-area h3 a:hover,
 a.home-reservation-button:hover {
     color: #fff;
-    background: #008000 none repeat scroll 0 0;
-    border-color: #008000;
+    background: #006881 none repeat scroll 0 0;
+    border-color: #006881;
 }
 
 .pogoSlider {
@@ -843,7 +843,7 @@ a.search-form-trigger::before {
 
 a.read-more {
     border: 1px solid;
-    color: #008000;
+    color: #006881;
     display: inline-block;
     font-size: 14px;
     font-weight: 700;
@@ -854,9 +854,9 @@ a.read-more {
 }
 
 .read-more:hover {
-    background: #008000;
+    background: #006881;
     color: #fff;
-    border-color: #008000;
+    border-color: #006881;
 }
 
 
@@ -924,8 +924,8 @@ a.read-more {
 }
 
 .promotions-details a.read-more:hover {
-    background: #008000 none repeat scroll 0 0;
-    border-color: #008000;
+    background: #006881 none repeat scroll 0 0;
+    border-color: #006881;
     color: #fff;
 }
 
@@ -994,8 +994,8 @@ a.read-more {
 
 .food-menu-list-menu ul li:hover,
 .food-menu-list-menu ul li.active {
-    background: #008000 none repeat scroll 0 0;
-    border-color: #008000;
+    background: #006881 none repeat scroll 0 0;
+    border-color: #006881;
     color: #fff;
 }
 
@@ -1036,7 +1036,7 @@ a.read-more {
 }
 
 .food-menu-details h3 span {
-    color: #008000;
+    color: #006881;
     float: right;
 }
 
@@ -1075,7 +1075,7 @@ a.read-more {
 
 a.reservation-button {
     background: #fff none repeat scroll 0 0;
-    color: #008000;
+    color: #006881;
     display: inline-block;
     font-weight: 700;
     letter-spacing: 4px;
@@ -1086,19 +1086,19 @@ a.reservation-button {
 }
 
 a.reservation-button:hover {
-    background: #008000 none repeat scroll 0 0;
+    background: #006881 none repeat scroll 0 0;
     color: #fff;
 }
 
 #reservation-form-modal .modal-header {
-    color: #008000;
+    color: #006881;
     letter-spacing: 2px;
     text-align: center;
     text-transform: uppercase;
 }
 
 .table-booking-form {
-    background: #008000 none repeat scroll 0 0;
+    background: #006881 none repeat scroll 0 0;
     display: block;
     padding: 30px 20px;
     z-index: 99;
@@ -1146,7 +1146,7 @@ a.reservation-button:hover {
 .table-booking-form button:hover {
     background: #fff none repeat scroll 0 0;
     border: 2px solid #fff;
-    color: #008000;
+    color: #006881;
 }
 
 option {
@@ -1183,7 +1183,7 @@ option {
 }
 
 .member-social-bookmark ul li a:hover {
-    color: #008000;
+    color: #006881;
 }
 
 .team-member-img {
@@ -1251,7 +1251,7 @@ option {
 }
 
 .member-details>h3:hover {
-    color: #008000;
+    color: #006881;
 }
 
 .member-details>p {
@@ -1281,7 +1281,7 @@ option {
 }
 
 a.post-meta-button {
-    background: #008000 none repeat scroll 0 0;
+    background: #006881 none repeat scroll 0 0;
     color: #fff;
     display: inline-block;
     font-size: 14px;
@@ -1301,7 +1301,7 @@ a.post-meta-button {
 }
 
 .post-details>h3::after {
-    background: #008000 none repeat scroll 0 0;
+    background: #006881 none repeat scroll 0 0;
     bottom: 0;
     content: "";
     height: 2px;
@@ -1338,7 +1338,7 @@ a.post-meta-button {
 
 .blog-area .owl-nav>div,
 .menus-area .owl-nav>div {
-    background: #008000 none repeat scroll 0 0;
+    background: #006881 none repeat scroll 0 0;
     color: #fff;
     display: inline-block;
     font-size: 25px;
@@ -1494,7 +1494,7 @@ a.post-meta-button {
 }
 
 .footer-area a {
-    color: #008000;
+    color: #006881;
 }
 
 .footer-area a:hover {
@@ -1531,7 +1531,7 @@ a.post-meta-button {
 }
 
 .footer-social-bookmark a:hover {
-    color: #008000;
+    color: #006881;
 }
 
 .footer-menu ul {
@@ -1590,7 +1590,7 @@ a.post-meta-button {
 -------------------------------*/
 
 a.scrolltotop {
-    background: #008000 none repeat scroll 0 0;
+    background: #006881 none repeat scroll 0 0;
     border: 1px solid transparent;
     bottom: 20px;
     color: #fff;
@@ -1681,7 +1681,7 @@ ul.page-location li a {
 }
 
 ul.page-location li.active a {
-    color: #008000;
+    color: #006881;
 }
 
 
@@ -1793,7 +1793,7 @@ ul.page-pagination li a {
 
 ul.page-pagination li.active a,
 ul.page-pagination li:hover a {
-    background: #008000 none repeat scroll 0 0;
+    background: #006881 none repeat scroll 0 0;
     color: #fff;
 }
 
@@ -1899,11 +1899,11 @@ ul.page-pagination li a {
 }
 
 .single-sidebar-widget input:focus {
-    border-color: #008000;
+    border-color: #006881;
 }
 
 .single-sidebar-widget input:focus+button {
-    background: #008000;
+    background: #006881;
 }
 
 .single-sidebar-widget>form button:hover {
@@ -1963,8 +1963,8 @@ ul.page-pagination li a {
 }
 
 .single-sidebar-widget.tag-widget ul li a:hover {
-    background: #008000 none repeat scroll 0 0;
-    border-color: #008000;
+    background: #006881 none repeat scroll 0 0;
+    border-color: #006881;
     color: #fff;
 }
 
@@ -2118,7 +2118,7 @@ ul.blog-instagram-feed-widget li {
 }
 
 .comment-meta h5 span a {
-    color: #008000;
+    color: #006881;
     float: right;
 }
 
@@ -2142,7 +2142,7 @@ ul.blog-instagram-feed-widget li {
 
 .comment-box input:focus,
 .comment-box textarea:focus {
-    border-color: #008000;
+    border-color: #006881;
 }
 
 .comment-box button {
@@ -2158,8 +2158,8 @@ ul.blog-instagram-feed-widget li {
 }
 
 .comment-box button:hover {
-    background: #008000 none repeat scroll 0 0;
-    border-color: #008000;
+    background: #006881 none repeat scroll 0 0;
+    border-color: #006881;
     color: #fff;
 }
 
@@ -2324,7 +2324,7 @@ ul.blog-instagram-feed-widget li {
 }
 
 .single-menu h3 span{
-    color: #008000;
+    color: #006881;
 }
 
 .single-menu-two {
@@ -2546,7 +2546,7 @@ ul.blog-instagram-feed-widget li {
   }
   
   .client-footer-right .ratings i {
-    color: #008000;
+    color: #006881;
   }
   @media only screen and (max-width: 1199px) {
     .client-footer-right .ratings i {
@@ -2643,9 +2643,9 @@ ul.blog-instagram-feed-widget li {
     line-height: 50px;
     font-size: 22px;
     background-color: transparent;
-    border: 1px solid #008000;
+    border: 1px solid #006881;
     border-radius: 50%;
-    color: #008000;
+    color: #006881;
     display: inline-block;
     text-align: center;
     position: relative;
