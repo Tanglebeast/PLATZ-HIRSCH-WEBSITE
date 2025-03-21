@@ -872,7 +872,7 @@ a.read-more {
 .reservation-button-area-bg,
 .blog-area-bg,
 .footer-area-bg {
-    background: rgba(0, 0, 0, 0) url("img/promotions/promotions_area_bg_1.jpg") no-repeat scroll center center / cover;
+    background: rgba(0, 0, 0, 0) url("img/promotions/promotions_area_bg_1.webp") no-repeat scroll center center / cover;
     height: 100%;
     left: 0;
     position: absolute;
@@ -1064,7 +1064,7 @@ a.read-more {
 }
 
 .reservation-button-area-bg {
-    background: rgba(0, 0, 0, 0) url("img/promotions/promotions_area_bg_2.jpg") no-repeat scroll center center / cover;
+    background: rgba(0, 0, 0, 0) url("img/promotions/promotions_area_bg_2.webp") no-repeat scroll center center / cover;
 }
 
 .resarvation-from-button.text-center h2 {
@@ -2313,7 +2313,7 @@ ul.blog-instagram-feed-widget li {
 .empfohlenpreis {
     font-size: 22px;
     font-weight: bold;
-    color: green;
+    color: #006881;
 }
 
 .single-menu h3{
@@ -2671,6 +2671,157 @@ ul.blog-instagram-feed-widget li {
 .mt-120 {
     margin-top: 120px;
 }
+
+.feed-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+
+
+.flipbook-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: #006881;
+    /* min-height: 100vh;
+    padding: 20px; */
+    overflow-x: auto; /* Scrollbar nur bei Bedarf */
+    position: relative;
+    max-width: 100vw; /* Verhindert Überlaufen */
+    box-sizing: border-box;
+}
+
+.book {
+    position: relative;
+    transition: transform 0.5s;
+    display: inline-block;
+    max-width: 90vw; /* Maximal 90% der Bildschirmbreite */
+    max-height: 80vh; /* Maximal 80% der Bildschirmhöhe */
+}
+
+.paper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    perspective: 1500px;
+}
+
+.front,
+.back {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+.front {
+    z-index: 1;
+    backface-visibility: hidden;
+    border-left: 3px solid powderblue;
+}
+
+.back {
+    z-index: 0;
+}
+
+.front-content,
+.back-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.front-content img,
+.back-content img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.back-content {
+    transform: rotateY(180deg);
+}
+
+/* Paper flip effect */
+.flipped .front,
+.flipped .back {
+    transform: rotateY(-180deg);
+}
+
+/* Controller Buttons */
+.flipbook-container button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10; /* Buttons über dem Buch */
+    transition: transform 0.5s;
+}
+
+.flipbook-container button:focus {
+    outline: none;
+}
+
+.flipbook-container button:hover i {
+    color: white;
+    transform: scale(1.05);
+}
+
+.flipbook-container i {
+    font-size: clamp(30px, 5vw, 50px); /* Skaliert zwischen 30px und 50px */
+    color: white;
+}
+
+/* Flexible Button-Positionierung */
+#prev-btn-book {
+    margin-right: 10px; /* Abstand zum Buch */
+}
+
+#next-btn-book {
+    margin-left: 10px; /* Abstand zum Buch */
+}
+
+/* Paper stack order */
+#p1 { z-index: 3; }
+#p2 { z-index: 2; }
+#p3 { z-index: 1; }
+
+/* Media Queries für kleinere Bildschirme */
+@media (max-width: 768px) {
+    .flipbook-container {
+        padding: 10px;
+    }
+    button {
+        padding: 5px;
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .flipbook-container {
+        flex-wrap: wrap; /* Buttons können umbrechen, wenn kein Platz */
+        padding: 5px;
+    }
+    #prev-btn-book, #next-btn-book {
+        margin: 5px 0; /* Vertikaler Abstand statt horizontal */
+    }
+}
+
 /*==================================
         END OF MAIN STYLESHEET
 ====================================*/

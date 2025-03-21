@@ -36,11 +36,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+
     <!--====== MAIN STYLESHEETS ======-->
     <link href="style.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
 
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+
+         
     <!--[if lt IE 9]>
         <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -137,17 +142,17 @@
         <!--HHOME SLIDER AREA-->
         <div class="slider-area">
             <div class="pogoSlider">
-                <div class="pogoSlider-slide" data-transition="fade" data-duration="1500" style="background:url(img/slider/slide_1.jpg) no-repeat scroll 0 0 / cover;">
+                <div class="pogoSlider-slide" data-transition="fade" data-duration="1500" style="background:url(img/slider/slide_1.webp) no-repeat scroll 0 0 / cover;">
                     <h2 class="pogoSlider-slide-element" data-in="slideDown" data-out="flipX" data-duration="700">Herzlich Willkommen im</h2>
                     <h1 class="pogoSlider-slide-element" data-in="expand" data-out="flipX" data-duration="1500"><span>Platz.Hirsch</span> Bistro</h1>
                     <h3 class="pogoSlider-slide-element" data-in="slideUp" data-out="flipX" data-duration="700"><a  href="#reservation-form-modal" data-toggle="modal">Jetzt reservieren</a></h3>
                 </div>
-                <div class="pogoSlider-slide" data-transition="fade" style="background:url(img/slider/slide_2.jpg) no-repeat scroll 0 0 / cover;">
+                <div class="pogoSlider-slide" data-transition="fade" style="background:url(img/slider/slide_2.webp) no-repeat scroll 0 0 / cover;">
                     <h2 class="pogoSlider-slide-element" data-in="slideDown" data-out="flipX" data-duration="700">Unser Menu</h2>
                     <h1 class="pogoSlider-slide-element" data-in="expand" data-out="flipX" data-duration="1500">Unsere <span>leckeren</span> Speisen und Getränke</h1>
                     <h3 class="pogoSlider-slide-element" data-in="slideUp" data-out="flipX" data-duration="700"><a href="#menu">Unser Menu</a></h3>
                 </div>
-                <div class="pogoSlider-slide" data-transition="fade" style="background:url(img/slider/slide_3.jpg) no-repeat scroll 0 0 / cover;">
+                <div class="pogoSlider-slide" data-transition="fade" style="background:url(img/slider/slide_3.webp) no-repeat scroll 0 0 / cover;">
                     <h2 class="pogoSlider-slide-element" data-in="slideDown" data-out="flipX" data-duration="700">Tischreservierung</h2>
                     <h1 class="pogoSlider-slide-element" data-in="expand" data-out="flipX" data-duration="1500">Reserviere <span>deinen</span> Tisch</h1>
                     <h3 class="pogoSlider-slide-element" data-in="slideUp" data-out="flipX" data-duration="700"><a  href="#reservation-form-modal" data-toggle="modal">Jetzt reservieren</a></h3>
@@ -303,7 +308,7 @@
                 <div class="menu-discount-offer col-md-12 col-lg-12 col-sm-12 col-xs-12">
                     <div class="single-promotions">
                         <div class="promotions-img">
-                            <img src="img/promotions/promo_slide_1.jpg" alt="">
+                            <img src="img/promotions/promo_slide_1.webp" alt="">
                         </div>
                         <div class="promotions-details">
                             <h3>Empfehlung 1</h3>
@@ -314,7 +319,7 @@
                     </div>
                     <div class="single-promotions">
                         <div class="promotions-img">
-                            <img src="img/promotions/promo_slide_2.jpg" alt="">
+                            <img src="img/promotions/promo_slide_2.webp" alt="">
                         </div>
                         <div class="promotions-details">
                             <h3>Empfehlung 2</h3>
@@ -325,7 +330,7 @@
                     </div>
                     <div class="single-promotions">
                         <div class="promotions-img">
-                            <img src="img/promotions/promo_slide_3.jpg" alt="">
+                            <img src="img/promotions/promo_slide_3.webp" alt="">
                         </div>
                         <div class="promotions-details">
                             <h3>Empfehlung 3</h3>
@@ -339,6 +344,21 @@
         </div>
     </section>
     <!--SPEACIAL PROMOTIONS AREA END-->
+
+
+<!--INSTAGRAM FEED-->
+    <div class="container feed-container section-padding">
+        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+            <div class="area-title text-center">
+                <h2>Neues aus Instagram</h2>
+            </div>
+        </div>
+        <div class="elfsight-app-bf16d284-b434-46d7-9141-bf73d17aa0c2" data-elfsight-app-lazy></div>
+        </div>
+<!--INSTAGRAM FEED END-->
+
+
+
 
     <!--MENUS AREA-->
     <section class="menus-area section-padding" id="menu">
@@ -516,6 +536,64 @@
     </section>
     
     <!--MENUS AREA END-->
+
+
+
+
+
+            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            START FLIPBOOK
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <section class="flipbook-container section-padding" id="flipbook-section">
+            <!-- Previous Button -->
+            <button id="prev-btn-book">
+                <i class="fas fa-arrow-circle-left"></i>
+            </button>
+        
+            <!-- Book -->
+            <div id="book" class="book">
+                <!-- Paper 1 -->
+                <div id="p1" class="paper">
+                    <div class="front">
+                        <div id="f1" class="front-content">
+                            <img src="img/galery/page-1.jpg" alt="Front 1">
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div id="b1" class="back-content">
+                            <img src="img/galery/page-2.jpg" alt="Back 1">
+                        </div>
+                    </div>
+                </div>
+                <!-- Paper 2 -->
+                <div id="p2" class="paper">
+                    <div class="front">
+                        <div id="f2" class="front-content">
+                            <img src="img/galery/page-3.jpg" alt="Front 2">
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div id="b2" class="back-content">
+                            <img src="img/galery/page-4.jpg" alt="Back 2">
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        
+            <!-- Next Button -->
+            <button id="next-btn-book">
+                <i class="fas fa-arrow-circle-right"></i>
+            </button>
+        </section>
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            END FLIPBOOK
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+
+
+
 
     <!--RESERVATION BUTTON AREA-->
     <section class="reservation-button-area section-padding" id="reservation-button">
@@ -700,7 +778,7 @@
     <!--TEAM AREA END-->
 
     <!--EVENT AREA-->
-    <section class="blog-area section-padding" id="events">
+    <!-- <section class="blog-area section-padding" id="events">
         <div class="blog-area-bg" data-stellar-background-ratio="0.6"></div>
         <div class="container wow fadeIn">
             <div class="row">
@@ -749,7 +827,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!--EVENT AREA END-->
 
        <!--GALLERY-->
@@ -1104,9 +1182,11 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/clientslider.js"></script>
     <script src="js/featuresslider.js"></script>
+    <script src="js/flipbook.js"></script>
 
     <!--===== ACTIVE JS=====-->
     <script src="js/main.js"></script>
+
 </body>
 
 </html>
