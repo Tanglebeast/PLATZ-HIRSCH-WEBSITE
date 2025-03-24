@@ -22,7 +22,7 @@
         767: {
           slidesPerView: 1,
         },
-        575: {
+        175: {
           slidesPerView: 1,
         },
       }
@@ -48,7 +48,7 @@
           767: {
             slidesPerView: 2,
           },
-          575: {
+          175: {
             slidesPerView: 1,
           },
         },

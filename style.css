@@ -2297,18 +2297,35 @@ ul.blog-instagram-feed-widget li {
 /*----------------------------------
     HOME ALT
 -----------------------------------*/
+
+.food-menu-list {
+    width: 100%;
+    margin-left: 0;
+    height: auto !important
+}
 .single-menu {
     /* background-color: rgb(240, 240, 240); */
-    margin: 5px;
-    width: 30%;
+    width: 33%;
     padding: 10px;
     /* border-radius: 5px; */
     color: rgba(0, 0, 0, 0.79);
     min-height: 100px;
     /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.2); */
     /* border-bottom: 1px solid rgba(0, 0, 0, 0.438); */
-    border-top: 1px dashed #6d6d6d;
+
 }
+
+@media only screen and (max-width: 991px) {
+    .single-menu {
+        width: 50%;
+    }
+  }
+
+  @media only screen and (max-width: 595px) {
+    .single-menu {
+        width: 100%;
+    }
+  }
 
 .empfohlenpreis {
     font-size: 22px;
@@ -2677,7 +2694,31 @@ ul.blog-instagram-feed-widget li {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding-bottom: 0;
 }
+
+.HideWidgetBranding {
+    height: 70px;
+    background-color: white;
+    margin-top: -50px;
+    z-index: 99999 !important;
+    position: absolute;
+    width: 100%;
+}
+
+@media only screen and (max-width: 990px) {
+    .HideWidgetBranding {
+        margin-top: -100px;
+    }
+  }
+
+
+
+
+
+
+
+
 
 
 
@@ -2806,7 +2847,7 @@ ul.blog-instagram-feed-widget li {
     .flipbook-container {
         padding: 10px;
     }
-    button {
+    .flipbook-container button {
         padding: 5px;
         display: none;
     }
@@ -2822,6 +2863,379 @@ ul.blog-instagram-feed-widget li {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+/* Allgemeines Styling */
+.menus-area {
+    background: #f9f9f9;
+    padding: 60px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.area-title h2 {
+    font-size: 2.5em;
+    color: #006881;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+/* Filter Container */
+.filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/* Dropdown Styling */
+/* Dropdown Styling */
+.dropdown {
+    position: relative;
+    min-width: 200px;
+}
+
+.dropdown-btn {
+    background: #fff;
+    border: 1px solid #006881;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #006881;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.dropdown-btn:hover {
+    background: #006881;
+    color: #fff;
+}
+
+.dropdown-content,
+.sub-menu-container {
+    display: none; /* Standardmäßig unsichtbar */
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    z-index: 10;
+    padding: 10px 0;
+    list-style: none;
+    margin: 0;
+}
+
+
+
+/* Sichtbarkeit der spezifischen Untermenüs basierend auf Hauptkategorie */
+.sub-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-content li {
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dropdown-content li:hover {
+    background: #f0f0f0;
+}
+
+.filter.active, .sub-filter.active, .special-filter.active {
+    background: #006881;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Sortier Container */
+.sortier-container {
+    padding: 15px;
+    width: 300px;
+}
+
+.price-range-filter, .price-sorting {
+    margin: 10px 0;
+}
+
+.slider {
+    width: 100%;
+    accent-color: #006881;
+}
+
+.price-display {
+    font-size: 0.9em;
+    color: #666;
+    margin: 5px 0;
+}
+
+.price-sorting button, .price-range-filter button {
+    background: #006881;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.price-sorting button:hover, .price-range-filter button:hover {
+    background: #004d61;
+}
+
+/* Menükarten */
+.food-menu-list {
+    display: flex;
+    /* flex-wrap: wrap;
+    gap: 20px; */
+    flex-direction: column;
+}
+
+.single-menu {
+    /* flex: 1 1 100%; */
+}
+
+.menu-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.menu-card h3 {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.menu-price {
+    font-size: 1em;
+    color: #006881;
+    font-weight: bold;
+}
+
+.menu-card p {
+    font-size: 0.95em;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Bestehendes Styling */
+.allergen-info {
+    color: #666;
+    margin-left: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.allergen-info:hover::after {
+    content: attr(data-allergens);
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    border-radius: 4px;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: 10;
+    font-size: 0.9em;
+}
+
+.veg-icon {
+    color: #2ecc71;
+    margin-left: 5px;
+}
+
+.menu-number {
+    font-size: 0.9em;
+    color: #888;
+    margin-right: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .filter-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .dropdown {
+        width: 100%;
+    }
+    .sortier-container {
+        width: 100%;
+    }
+    .single-menu {
+        flex: 1 1 100%;
+    }
+    .dropdown-btn {
+        width: 100% !important;
+        border-radius: 8px;
+    }
+}
+
+@media (min-width: 769px) {
+    .single-menu {
+        flex: 1 1 calc(33.33% - 20px);
+    }
+}
+
+
+
+
+
+/* Pinned Items Container */
+.pinned-items-container {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    /* margin-top: 40px; */
+    position: sticky;
+    top: 20px;
+    max-width: 300px;
+    align-self: flex-start;
+    width: 100%;
+}
+
+.pinned-items-container h3 {
+    font-size: 1.4em;
+    color: #006881;
+    margin-bottom: 15px;
+}
+
+.pinned-items-list {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.pinned-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.pinned-item span {
+    font-size: 0.95em;
+    color: #333;
+    flex: 1; /* Gibt dem Text mehr Platz */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Kürzt lange Titel mit "..." */
+}
+
+.pinned-item button {
+    background: none;
+    border: none;
+    color: #e74c3c;
+    cursor: pointer;
+    font-size: 1em;
+    margin-left: 10px;
+}
+
+.total-price {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #006881;
+    margin: 15px 0;
+}
+
+#clear-pinned {
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#clear-pinned:hover {
+    background: #c0392b;
+}
+
+/* Pin Button */
+.pin-btn {
+    background: none;
+    border: none;
+    color: #006881;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+
+.pin-btn:hover {
+    color: #004d61;
+}
+
+.pin-btn.pinned {
+    color: #2ecc71;
+}
+
+
+
+.food-menu-list {
+    /* flex: 1;
+    min-width: 0; */
+}
+
+@media (max-width: 768px) {
+    .pinned-items-container {
+        position: static;
+        max-width: 100%;
+        margin: 20px 0;
+    }
+
+    .food-menu-pinned-container {
+        flex-direction: column;
+    }
+}
+
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.food-menu-pinned-container {
+    display: flex;
+    gap: 50px;
+}
+
+.w100 {
+    width: 100%;
+}
 /*==================================
         END OF MAIN STYLESHEET
 ====================================*/
