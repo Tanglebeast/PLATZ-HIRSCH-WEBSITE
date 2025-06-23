@@ -91,6 +91,7 @@ body {
     font-weight: 400;
     letter-spacing: 0.3px;
     line-height: 1.7em;
+    width: 100%;
 }
 
 a:hover {
@@ -3522,6 +3523,14 @@ ul.blog-instagram-feed-widget li {
     border: 1px solid #ddd;
     border-radius: 5px;
     text-align: center;
+}
+
+div.eapps-widget {
+    width: 70% !important;
+}
+
+.w95 {
+    width: 95%;
 }
 /*==================================
         END OF MAIN STYLESHEET
