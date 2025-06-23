@@ -275,6 +275,7 @@
     border-radius: 50%;
     cursor: pointer;
     height: 12px;
+    width: 12px !important;
 }
 
 .pogoSlider-nav-btn:focus {
