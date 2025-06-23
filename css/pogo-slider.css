@@ -274,7 +274,7 @@
     border: medium none;
     border-radius: 30px !important;
     cursor: pointer;
-    height: 12px;
+    height: 12px !important;
     width: 12px !important;
 }
 
