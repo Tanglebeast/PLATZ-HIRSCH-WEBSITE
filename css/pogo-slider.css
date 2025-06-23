@@ -276,6 +276,8 @@
     cursor: pointer;
     height: 12px !important;
     width: 12px !important;
+    min-width: 12px !important;
+    max-width: 12px !important;
 }
 
 .pogoSlider-nav-btn:focus {
