@@ -167,7 +167,7 @@ input:-webkit-autofill:focus {
 }
 
 .area-title {
-    margin-bottom: 60px;
+    margin-bottom: 15px;
 }
 
 .area-title h2 {
@@ -1064,7 +1064,7 @@ a.read-more {
 }
 
 .reservation-button-area-bg {
-    background: rgba(0, 0, 0, 0) url("img/promotions/promotions_area_bg_2.webp") no-repeat scroll center center / cover;
+    background: rgba(0, 0, 0, 0) url("img/promotions/promotions_area_bg_2.jpg") no-repeat scroll center center / cover;
 }
 
 .resarvation-from-button.text-center h2 {
@@ -2736,6 +2736,7 @@ ul.blog-instagram-feed-widget li {
     position: relative;
     max-width: 100vw; /* Verhindert Überlaufen */
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .book {
@@ -2770,7 +2771,7 @@ ul.blog-instagram-feed-widget li {
 .front {
     z-index: 1;
     backface-visibility: hidden;
-    border-left: 3px solid powderblue;
+    /* border-left: 3px solid transparent; */
 }
 
 .back {
@@ -2842,21 +2843,36 @@ ul.blog-instagram-feed-widget li {
 #p2 { z-index: 2; }
 #p3 { z-index: 1; }
 
+/* #p2.paper.flipped {
+    display: none;
+} */
+
 /* Media Queries für kleinere Bildschirme */
 @media (max-width: 768px) {
     .flipbook-container {
         padding: 10px;
+        overflow: hidden;
     }
     .flipbook-container button {
         padding: 5px;
         display: none;
     }
+    .front,
+.back {
+    /* width: 50%;
+    height: 100%; */
+    background-color: transparent;
+}
+.book {
+    width: 48% !important;
+}
 }
 
 @media (max-width: 480px) {
     .flipbook-container {
         flex-wrap: wrap; /* Buttons können umbrechen, wenn kein Platz */
         padding: 5px;
+        overflow: hidden;
     }
     #prev-btn-book, #next-btn-book {
         margin: 5px 0; /* Vertikaler Abstand statt horizontal */
@@ -2864,7 +2880,99 @@ ul.blog-instagram-feed-widget li {
 }
 
 
+/* Page Indicator Styles */
+.page-indicator {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+    z-index: 20;
+}
 
+/* Book Controls Styles */
+.book-controls {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+    z-index: 20;
+}
+
+.book-controls button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.book-controls button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Zoomable Container Styles */
+.zoomable-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.zoomable-container img {
+    transition: transform 0.3s ease;
+    transform-origin: center center;
+}
+
+.zoomable-container.zoomed img {
+    cursor: grab;
+}
+
+.zoomable-container.zoomed img:active {
+    cursor: grabbing;
+}
+
+/* Fullscreen Styles */
+.flipbook-container.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flipbook-container.fullscreen .book {
+    max-width: 95vw !important;
+    max-height: 95vh !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .page-indicator, .book-controls {
+        font-size: 12px;
+    }
+
+    .book-controls button {
+        width: 35px;
+        height: 35px;
+    }
+}
 
 
 
@@ -3235,6 +3343,185 @@ ul.blog-instagram-feed-widget li {
 
 .w100 {
     width: 100%;
+}
+
+.mr0imp {
+    margin-right: 0px !important;
+}
+
+.website-logo img {
+    height: 200px;
+    width: auto;
+}
+.website-box {
+    padding: 50px;
+    background-color: black;
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 15px;
+    padding-bottom: 0 !important;
+    margin-top: 100px;
+    color: rgba(255, 255, 255, 0.758);
+}
+
+.website-box a{
+    color: white;
+}
+
+
+.pdf-download-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #006881;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+.pdf-download-btn:hover {
+    background-color: #005267;
+    color: white;
+}
+
+.color-white {
+    color: rgba(255, 255, 255, 0.747);
+}
+
+.color-white a{
+    color: white;
+}
+
+
+
+
+
+
+
+#cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 1000;
+    display: none;
+}
+.cookie-banner-content {
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 15px;
+}
+.cookie-banner-content h3 {
+    color: white;
+}
+.cookie-buttons {
+    margin-top: 10px;
+}
+.cookie-btn {
+    margin: 5px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.accept { 
+    background-color: #0085E4;
+    transition-duration: .2s;
+    border: none;
+    color: rgb(241, 241, 241);
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 20px;
+}
+.accept:hover { 
+    background-color: #0085e4bb;
+    transition-duration: .2s;
+}
+.reject { 
+    background-color: rgb(154, 12, 12);
+    transition-duration: .2s;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 20px;
+}
+.reject:hover { 
+    background-color: rgb(212, 10, 10);
+    transition-duration: .2s;
+}
+.settings { 
+    background-color: rgb(109, 109, 109);
+    transition-duration: .2s;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 20px;
+}
+.settings:hover { 
+    background-color: rgb(123, 123, 123);
+    transition-duration: .2s;
+}
+.cookie-settings {
+    display: none;
+    background: black;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1001;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+}
+.cookie-settings-buttons {
+    text-align: center;
+    margin-top: 10px;
+}
+.save {
+    background-color: #50537f;
+    transition-duration: .2s;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 20px;
+}
+.save:hover {
+    background-color: #9173ff;
+    transition-duration: .2s;
+}
+#cookieSvg {
+    fill: rgba(255, 255, 255, 0.501);
+    height: 50px;
+    margin-bottom: 15px;
+}
+.category-div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: auto;
+}
+.cookie-category {
+    width: calc(50% - 10px);
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
 }
 /*==================================
         END OF MAIN STYLESHEET
