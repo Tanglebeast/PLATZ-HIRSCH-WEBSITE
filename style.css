@@ -775,7 +775,7 @@ a.search-form-trigger::before {
 ------------------------------*/
 
 .about-area {
-    background: rgba(0, 0, 0, 0) url("img/about/home_three_about_bg.png") no-repeat scroll center bottom / contain;
+    background: rgba(0, 0, 0, 0) url("img/about/home_three_about_bg.webp") no-repeat scroll center bottom / contain;
     position: relative;
 }
 
@@ -1065,7 +1065,7 @@ a.read-more {
 }
 
 .reservation-button-area-bg {
-    background: rgba(0, 0, 0, 0) url("img/promotions/promotions_area_bg_2.jpg") no-repeat scroll center center / cover;
+    background: rgba(0, 0, 0, 0) url("img/promotions/promotions_area_bg_2.webp") no-repeat scroll center center / cover;
 }
 
 .resarvation-from-button.text-center h2 {
